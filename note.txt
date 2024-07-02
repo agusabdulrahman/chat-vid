@@ -1,0 +1,48 @@
+const input = document.createElement('input');
+          input.setAttribute('sype', 'text');
+          input.setAttribute('placeholder', 'Ask a Question');
+          input.style.borderRadius = '20px';
+          input.style.width = '80%';
+          input.style.border = '1-px solid #ffffff10';
+          input.style.backgroundColor = '#1d1d1d';
+          input.style.color = '#ffffff';
+          input.style.padding = '10px';
+          input.style.outline = 'none';
+          input.style.fontSize = '15px';
+          input.style.display = 'none';
+
+          const subscribeButton = document.createElement('button');
+          subscribeButton.textContent = 'subscribe';
+          subscribeButton.style.cssText = `
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-right: 10px;
+          padding-left: 10px;
+          margin-left: 5px;
+          border: 1px solid #00000010;
+          background-color: #ffffff;
+          font-family: Arial, sans-serif;
+          font-size: 17px;
+          color: #000000;
+          border-radius: 20px;
+          cursor: pointer;
+          display:none;
+          `;
+
+          const submitButton = document.createElement('button');
+          submitButton.textContent = 'Ask';
+          submitButton.style.cssText = `
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-right: 10px;
+          padding-left: 10px;
+          margin-left: 5px;
+          border: 1px solid #00000010;
+          background-color: #ffffff;
+          font-family: Arial, sans-serif;
+          font-size: 17px;
+          color: #000000;
+          border-radius: 20px;
+          cursor: pointer;
+          display:none;
+          `;

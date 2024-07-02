@@ -1,0 +1,19 @@
+{
+  "name": "chatVid",
+  "description": "Summarize and chat with YouTube video on the same video page powered by AI.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "tabs", "scripting", "cookies", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {},
+  "host_permissions": ["http://localhost:3000/*", "https://*/*"]
+}
